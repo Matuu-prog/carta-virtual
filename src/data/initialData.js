@@ -5,7 +5,7 @@ export const initialMenu = [
     descripcion: "En pan de miga o árabe, tostado a punto.",
     precio: 4500,
     categoria: "Desayuno/merienda",
-    imagen: "https://images.unsplash.com/photo-1525351484163-7529414395d8?auto=format&fit=crop&w=800&q=80"
+    imagen: "https://images.unsplash.com/photo-1585516458147-5ec89e1b0fd9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const initialMenu = [
     descripcion: "Con papas fritas o puré.",
     precio: 9500,
     categoria: "Almuerzo",
-    imagen: "https://images.unsplash.com/photo-1593560708920-6316e4e6cd28?auto=format&fit=crop&w=800&q=80"
+    imagen: "https://images.unsplash.com/photo-1570263495075-b8258671743f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 4,
