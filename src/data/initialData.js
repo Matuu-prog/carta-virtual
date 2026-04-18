@@ -1,34 +1,34 @@
 export const initialMenu = [
   {
     id: 1,
-    nombre: "Tostado de Jamón y Queso",
-    descripcion: "En pan de miga o árabe, tostado a punto.",
-    precio: 4500,
-    categoria: "Desayuno/merienda",
-    imagen: "https://images.unsplash.com/photo-1585516458147-5ec89e1b0fd9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    nombre: "La Clásica Katz",
+    descripcion: "Medallón de 180g, doble cheddar, lechuga capuchina, tomate y salsa especial de la casa en pan brioche artesanal.",
+    precio: 7500,
+    categoria: "Clásicas",
+    imagen: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: 2,
-    nombre: "Merienda Libre Full",
-    descripcion: "Incluye infusiones, jugos, facturas, tortas y tostadas sin límite.",
-    precio: 12000,
-    categoria: "Merienda libre",
-    imagen: "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=800&q=80"
+    nombre: "Truffle Mushroom Burger",
+    descripcion: "Doble medallón de 180g, queso suizo, champiñones salteados, rúcula y mayonesa de trufa negra.",
+    precio: 10500,
+    categoria: "Premium",
+    imagen: "https://images.unsplash.com/photo-1553979459-d2229ba7433b?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: 3,
-    nombre: "Milanesa a la Napolitana",
-    descripcion: "Con papas fritas o puré.",
+    nombre: "Bacon BBQ Crispy",
+    descripcion: "Medallón smash de 150g, doble bacon crocante, aros de cebolla fritos, cheddar y salsa barbacoa ahumada.",
     precio: 9500,
-    categoria: "Almuerzo",
-    imagen: "https://images.unsplash.com/photo-1570263495075-b8258671743f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    categoria: "Premium",
+    imagen: "https://images.unsplash.com/photo-1586816001966-79b736744398?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: 4,
-    nombre: "Café con Leche + 2 Medialunas",
-    descripcion: "Medialunas de manteca recién horneadas.",
-    precio: 3200,
-    categoria: "Desayuno/merienda",
-    imagen: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    nombre: "Double Smash Onion",
+    descripcion: "Dos medallones smash de 100g cocinados sobre cebolla picada fina, triple cheddar derretido y pan potato roll.",
+    precio: 8200,
+    categoria: "Clásicas",
+    imagen: "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop"
   }
 ];

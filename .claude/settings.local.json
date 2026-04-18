@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(node -e \"const fs = require\\('fs'\\); const code = fs.readFileSync\\('src/App.jsx', 'utf8'\\); console.log\\('Lines:', code.split\\('\\\\n'\\).length\\); console.log\\('Has guardarEdicion:', code.includes\\('guardarEdicion'\\)\\); console.log\\('Has editandoPlato:', code.includes\\('editandoPlato'\\)\\); console.log\\('Has Pencil import:', code.includes\\('Pencil'\\)\\);\")",
+      "Bash(npm run:*)"
+    ]
+  }
+}
