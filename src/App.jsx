@@ -20,11 +20,7 @@ function App() {
     return localStorage.getItem('menu-admin-session') === 'true';
   });
 
-  const [showLogin, setShowLogin] = useState(false);
   const [filtro, setFiltro] = useState('Todos');
-  const [user, setUser] = useState('');
-  const [pass, setPass] = useState('');
-  const [error, setError] = useState('');
 
   // Estado para nuevo plato
   const [nuevoPlato, setNuevoPlato] = useState({
@@ -62,18 +58,7 @@ function App() {
   }, [isAdmin]);
 
   // --- FUNCIONES ---
-  const handleLogin = (e) => {
-    e.preventDefault();
-    if (user === 'admin' && pass === '1234') {
-      setIsAdmin(true);
-      setShowLogin(false);
-      setError('');
-      setUser('');
-      setPass('');
-    } else {
-      setError('Usuario o contraseña incorrectos');
-    }
-  };
+  // Login manejado directamente sin modal para demo
 
   const handleLogout = () => {
     setIsAdmin(false);
@@ -334,7 +319,7 @@ function App() {
       {!isAdmin && (
         <footer className="text-center py-10 text-zinc-600 text-sm">
           <p>© 2026 KATZ BURGUER</p>
-          <button onClick={() => setShowLogin(true)} className="mt-4 mx-auto text-xs text-zinc-500 hover:text-amber-500 bg-zinc-900 border border-zinc-800 px-4 py-2.5 rounded-full flex items-center justify-center gap-1 transition-colors">
+          <button onClick={() => setIsAdmin(true)} className="mt-4 mx-auto text-xs text-zinc-500 hover:text-amber-500 bg-zinc-900 border border-zinc-800 px-4 py-2.5 rounded-full flex items-center justify-center gap-1 transition-colors">
             <LogIn size={14} /> Acceso Dueño
           </button>
         </footer>
@@ -472,38 +457,7 @@ function App() {
         </div>
       )}
 
-      {/* MODAL LOGIN */}
-      {showLogin && (
-        <div className="fixed inset-0 bg-black/80 flex items-end sm:items-center justify-center z-50 p-4 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 w-full max-w-sm shadow-2xl relative animate-in slide-in-from-bottom-10 sm:slide-in-from-bottom-0 sm:zoom-in-95 duration-300">
-            <button onClick={() => setShowLogin(false)} className="absolute top-5 right-5 text-zinc-500 hover:text-white bg-zinc-800 p-1.5 rounded-full transition-colors">
-              <X size={20} />
-            </button>
-            <div className="text-center mb-6 mt-2">
-                <div className="bg-zinc-800 border border-zinc-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <LogIn className="text-amber-500" size={28}/>
-                </div>
-                <h2 className="text-2xl font-bold text-white">Acceso Admin</h2>
-                <p className="text-zinc-400 text-sm mt-1">Gestión Katz Burguer</p>
-            </div>
-            
-            <form onSubmit={handleLogin} className="space-y-4">
-              <div className="space-y-1">
-                <label className="text-sm font-medium text-zinc-400 ml-1">Usuario</label>
-                <input type="text" className="w-full p-3 bg-zinc-950 border border-zinc-800 text-white rounded-xl outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all"
-                    value={user} onChange={(e) => setUser(e.target.value)} placeholder="Ej: admin" />
-              </div>
-              <div className="space-y-1">
-                <label className="text-sm font-medium text-zinc-400 ml-1">Contraseña</label>
-                <input type="password" className="w-full p-3 bg-zinc-950 border border-zinc-800 text-white rounded-xl outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all"
-                    value={pass} onChange={(e) => setPass(e.target.value)} placeholder="Ej: 1234" />
-              </div>
-              {error && <div className="bg-red-500/10 border border-red-500/20 text-red-500 text-sm p-3 rounded-xl text-center font-medium flex items-center justify-center gap-2"><X size={14}/>{error}</div>}
-              <button type="submit" className="w-full bg-amber-500 text-zinc-950 py-4 rounded-xl font-bold text-lg hover:bg-amber-400 transition-all active:scale-95 shadow-lg shadow-amber-500/20 mt-4">Ingresar</button>
-            </form>
-          </div>
-        </div>
-      )}
+      {/* MODAL LOGIN REMOVIDO PARA DEMO */}
     </div>
   );
 }
